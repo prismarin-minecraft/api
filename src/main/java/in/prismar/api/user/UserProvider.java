@@ -45,23 +45,6 @@ public interface UserProvider<U extends User> {
     void unloadAll();
 
     /**
-     * Register a new user (persist)
-     *
-     * @param uuid {@link UUID}
-     * @return
-     */
-    U register(UUID uuid);
-
-
-    /**
-     * Register user async
-     *
-     * @param uuid {@link UUID}
-     * @return
-     */
-    CompletableFuture<U> registerAsync(UUID uuid);
-
-    /**
      * Get user by UUID, it can return also the cached one
      *
      * @param uuid {@link UUID}
