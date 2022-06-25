@@ -1,6 +1,6 @@
 package in.prismar.api.user;
 
-import in.prismar.api.PrismarinComponent;
+import in.prismar.api.PrismarinProvider;
 
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
@@ -11,8 +11,8 @@ import java.util.concurrent.CompletableFuture;
  * Proprietary and confidential
  * Written by Maga
  **/
-@PrismarinComponent
-public interface UserComponent<U extends User> {
+@PrismarinProvider
+public interface UserProvider<U extends User> {
 
     /**
      * Load user (if user does not exists, it will create one)

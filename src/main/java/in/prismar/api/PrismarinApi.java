@@ -13,43 +13,43 @@ import java.util.concurrent.ConcurrentHashMap;
  **/
 public final class PrismarinApi {
 
-    /** Registered components **/
-    private static final Map<Class<?>, Object> COMPONENTS = new ConcurrentHashMap<>();
+    /** Registered providers **/
+    private static final Map<Class<?>, Object> PROVIDERS = new ConcurrentHashMap<>();
 
     /**
-     * Register a component with the given class type and instance
+     * Register a provider with the given class type and instance
      *
-     * @param clazz the interface on the api side that is annotated with {@link PrismarinComponent}
+     * @param clazz the interface on the api side that is annotated with {@link PrismarinProvider}
      * @param instance
      * @param <T>
-     * @throws IllegalArgumentException = when instance is not annotated with {@link PrismarinComponent}
+     * @throws IllegalArgumentException = when instance is not annotated with {@link PrismarinProvider}
      */
-    public static <T> void registerComponent(Class<?> clazz, @NonNull T instance) throws IllegalArgumentException {
-        if(!clazz.isAnnotationPresent(PrismarinComponent.class)) {
-            throw new IllegalArgumentException("Missing PrismarinComponent annotation for: " + clazz.getSimpleName());
+    public static <T> void registerProvider(Class<?> clazz, @NonNull T instance) throws IllegalArgumentException {
+        if(!clazz.isAnnotationPresent(PrismarinProvider.class)) {
+            throw new IllegalArgumentException("Missing PrismarinProvider annotation for: " + clazz.getSimpleName());
         }
-        COMPONENTS.put(clazz, instance);
+        PROVIDERS.put(clazz, instance);
     }
 
     /**
-     * Get component by class typr (mostly interface)
+     * Get provider by class type (mostly interface)
      *
-     * @param component
+     * @param provider
      * @return
      * @param <T> returns the instance that is registered for this clazz type
      */
-    public static <T> T getComponent(Class<?> component) {
-        Object instance = COMPONENTS.get(component);
+    public static <T> T getProvider(Class<?> provider) {
+        Object instance = PROVIDERS.get(provider);
         return (T) instance;
     }
 
     /**
-     * Check if a class type is registered as a component
+     * Check if a class type is registered as a provider
      *
-     * @param component
+     * @param provider
      * @return
      */
-    public static boolean existsComponent(Class<?> component) {
-        return COMPONENTS.containsKey(component);
+    public static boolean existsProvider(Class<?> provider) {
+        return PROVIDERS.containsKey(provider);
     }
 }
