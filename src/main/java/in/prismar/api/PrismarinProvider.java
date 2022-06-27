@@ -15,4 +15,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface PrismarinProvider {
 
+    /**
+     * Mark class as a Provider (used for getting interface implementations)
+     */
 }
