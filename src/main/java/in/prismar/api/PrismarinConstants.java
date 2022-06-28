@@ -8,7 +8,8 @@ package in.prismar.api;
  **/
 public final class PrismarinConstants {
 
-    public static final String PREFIX = "§8<-§bPrismarin§8-> §7";
+    public static final String RAW_PREFIX = "§8<-§bPrismarin§8->";
+    public static final String PREFIX = RAW_PREFIX + " §7";
     public static final String CURRENT_SEASON = "0";
     public static final String PERMISSION_PREFIX = "prismarin.";
 
