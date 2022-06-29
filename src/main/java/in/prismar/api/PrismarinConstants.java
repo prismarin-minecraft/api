@@ -16,6 +16,7 @@ public final class PrismarinConstants {
     /** Messages **/
     public static final String NO_PERMISSION_MESSAGE = PREFIX + "§cYou do not have enough permissions.";
     public static final String PLAYER_NOT_FOUND_MESSAGE = PREFIX + "§7This player does not exists.";
+    public static final String PLAYER_NOT_ONLINE_MESSAGE = PREFIX + "§7This player is not online.";
 
 
 }
