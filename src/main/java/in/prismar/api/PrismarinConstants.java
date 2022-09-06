@@ -19,5 +19,10 @@ public final class PrismarinConstants {
     public static final String PLAYER_NOT_FOUND_MESSAGE = PREFIX + "§7This player does not exists.";
     public static final String PLAYER_NOT_ONLINE_MESSAGE = PREFIX + "§7This player is not online.";
 
-
+    /** Extra **/
+    public static final String BORDER = "§8§m---------------§8[ §b● §8]§8§m---------------";
+    public static final String DOT = "§8▪";
+    public static final String LISTING_DOT = " " + DOT;
+    public static final String ARROW_RIGHT = "§8»";
+    public static final String ARROW_LEFT = "§8«";
 }
