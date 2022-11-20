@@ -25,6 +25,10 @@
             <id>minecraft</id>
             <url>https://nexus.prismar.in/repository/minecraft/</url>
         </repository>
+        <repository>
+            <id>prismarin</id>
+            <url>https://nexus.prismar.in/repository/prismarin/</url>
+        </repository>
     </repositories>
 
 
