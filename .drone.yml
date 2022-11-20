@@ -14,7 +14,7 @@ steps:
     image: md5lukas/drone-mvn-settings
     settings:
       servers:
-        - id: prismarin
+        - id: minecraft
           username: admin
       serverSecrets:
         from_secret: NEXUS_CREDENTIALS
@@ -39,7 +39,7 @@ steps:
     image: md5lukas/drone-mvn-settings
     settings:
       servers:
-        - id: prismarin
+        - id: minecraft
           username: admin
       serverSecrets:
         from_secret: NEXUS_CREDENTIALS
