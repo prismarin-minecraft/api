@@ -22,6 +22,7 @@ public class UserData implements RepositoryEntity<String> {
     //------------------------------------------------------//
     // Global
     private Map<String, Long> stats;
+    private Map<String, Object> settings;
     private long joined;
     private long lastJoined;
     //------------------------------------------------------//
