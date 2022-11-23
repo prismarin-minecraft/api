@@ -11,9 +11,11 @@ import java.util.Map;
  * Written by Maga
  **/
 @Data
-public class SeasonData {
+public class Arsenal {
 
-    private double balance;
-    private Map<String, Long> timestamps;
-    private Arsenal arsenal;
+    private String primaryWeapon;
+    private String secondaryWeapon;
+    private Map<String, ArsenalItem> weapons;
+
+    private Map<String, ArsenalItem> armor;
 }

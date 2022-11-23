@@ -25,6 +25,8 @@ public class UserData implements RepositoryEntity<String> {
     private Map<String, Object> settings;
     private long joined;
     private long lastJoined;
+
+    private Map<String, Integer> crates;
     //------------------------------------------------------//
 
     private Map<String, SeasonData> seasons;
