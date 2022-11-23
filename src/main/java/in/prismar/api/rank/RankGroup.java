@@ -11,5 +11,7 @@ public interface RankGroup {
     String getName();
     String getPrefix();
     String getSuffix();
+
+    String getTabSort();
     int getWeight();
 }
