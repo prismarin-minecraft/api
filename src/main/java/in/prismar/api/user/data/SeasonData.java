@@ -17,5 +17,5 @@ public class SeasonData {
     private Map<String, Long> timestamps;
 
     private Map<String, Long> stats;
-    private Arsenal arsenal;
+    private Map<String, ArsenalItem> arsenal;
 }

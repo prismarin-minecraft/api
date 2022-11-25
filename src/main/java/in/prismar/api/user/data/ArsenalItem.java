@@ -1,6 +1,7 @@
 package in.prismar.api.user.data;
 
 import lombok.Data;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.Map;
 
@@ -13,6 +14,6 @@ import java.util.Map;
 @Data
 public class ArsenalItem {
 
-    private String customItemId;
-    private Map<String, Object> data;
+    private String value;
+    private transient ItemStack item;
 }
