@@ -15,5 +15,7 @@ public class SeasonData {
 
     private double balance;
     private Map<String, Long> timestamps;
+
+    private Map<String, Long> stats;
     private Arsenal arsenal;
 }
