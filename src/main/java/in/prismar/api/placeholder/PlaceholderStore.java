@@ -13,6 +13,13 @@ import java.util.UUID;
 @PrismarinProvider
 public interface PlaceholderStore {
 
+    /**
+     * Get global placeholder value by key
+     *
+     * @param key
+     * @return
+     * @param <T>
+     */
     <T> T getPlaceholder(String key);
 
     <T> void setPlaceholder(String key, T value);

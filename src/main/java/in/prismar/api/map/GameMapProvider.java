@@ -42,6 +42,20 @@ public interface GameMapProvider {
      */
     String getCurrentMapNameColored();
 
+    /**
+     * Get next map rotation timestamp
+     *
+     * @return
+     */
+    long getNextMapRotationTimestamp();
+
+    /**
+     * Get next vote rotation timestamp
+     *
+     * @return
+     */
+    long getVoteMapRotationTimestamp();
+
 
     /**
      * Get fancy name of map
