@@ -23,4 +23,6 @@ public interface RegionProvider {
 
     boolean hasFlag(String region, String flag);
 
+    boolean isInRegionWithFlag(Location location, String flag);
+
 }
