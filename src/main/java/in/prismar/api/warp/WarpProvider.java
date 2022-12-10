@@ -14,6 +14,7 @@ import org.bukkit.entity.Player;
 public interface WarpProvider {
 
     void teleport(Player player, String warp);
+    void teleportToSpawn(Player player);
 
     boolean existsWarp(String name);
 
