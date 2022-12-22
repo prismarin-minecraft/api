@@ -12,6 +12,8 @@ public interface RankGroup {
     String getPrefix();
     String getSuffix();
 
+    String getDiscordId();
+
     String getTabSort();
     int getWeight();
 }
