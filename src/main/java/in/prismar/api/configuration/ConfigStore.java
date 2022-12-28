@@ -13,5 +13,6 @@ public interface ConfigStore {
 
     String getProperty(String key);
 
+    String getProperty(String category, String key);
 
 }

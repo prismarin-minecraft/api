@@ -15,9 +15,7 @@ public interface WarpProvider {
 
     void teleport(Player player, String warp);
     void teleportToSpawn(Player player);
-
     boolean existsWarp(String name);
-
     Location getWarp(String name);
 
 }
