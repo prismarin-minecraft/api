@@ -1,6 +1,7 @@
 package in.prismar.api.compass;
 
 import in.prismar.api.PrismarinProvider;
+import in.prismar.library.common.event.EventBus;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
@@ -17,5 +18,7 @@ public interface CompassProvider {
     void removeEntry(Player player, String name);
     void removeAllEntries(Player player);
     boolean hasEntry(Player player, String name);
+
+    EventBus getEventBus();
 
 }
