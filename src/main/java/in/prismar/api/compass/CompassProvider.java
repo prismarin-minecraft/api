@@ -15,5 +15,7 @@ public interface CompassProvider {
 
     void addEntry(Player player, Location location, String name, String color);
     void removeEntry(Player player, String name);
+    void removeAllEntries(Player player);
     boolean hasEntry(Player player, String name);
+
 }
