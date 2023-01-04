@@ -1,7 +1,9 @@
 package in.prismar.api.user;
 
 import in.prismar.api.PrismarinProvider;
+import in.prismar.api.user.data.UserData;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
@@ -83,4 +85,14 @@ public interface UserProvider<U extends User> {
      * @return
      */
     long getRegisteredCount();
+
+    /**
+     * Find all users sorted
+     *
+     * @param sorted
+     * @param pageIndex
+     * @param pageSize
+     * @return
+     */
+    CompletableFuture<List<UserData>> getAllSorted(String sorted, int pageIndex, int pageSize);
 }
