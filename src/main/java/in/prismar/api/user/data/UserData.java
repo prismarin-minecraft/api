@@ -27,6 +27,10 @@ public class UserData implements RepositoryEntity<String> {
     private long lastJoined;
 
     private Map<String, Integer> crates;
+
+    private Map<String, Integer> boosters;
+
+    private Map<String, Object> attachments;
     //------------------------------------------------------//
 
     private Map<String, SeasonData> seasons;

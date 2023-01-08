@@ -20,4 +20,6 @@ public class SeasonData {
     private Map<String, ArsenalItem> arsenal;
 
     private Map<String, String> storage;
+
+    private Map<String, Object> attachments;
 }
