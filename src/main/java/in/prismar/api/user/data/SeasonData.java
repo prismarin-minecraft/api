@@ -14,6 +14,9 @@ import java.util.Map;
 public class SeasonData {
 
     private double balance;
+
+    private BattlePass battlePass;
+
     private Map<String, Long> timestamps;
 
     private Map<String, Long> stats;
