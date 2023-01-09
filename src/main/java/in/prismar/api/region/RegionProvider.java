@@ -25,4 +25,6 @@ public interface RegionProvider {
 
     boolean isInRegionWithFlag(Location location, String flag);
 
+    Location getRandomLocationInRegion(String region);
+
 }
