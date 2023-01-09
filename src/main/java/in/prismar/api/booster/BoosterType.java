@@ -16,7 +16,8 @@ import org.bukkit.inventory.ItemStack;
 @Getter
 public enum BoosterType {
 
-    MONEY(new ItemBuilder(Material.GOLD_INGOT).setName("§6Money").build(), 30);
+    MONEY(new ItemBuilder(Material.GOLD_INGOT).setName("§6Money").build(), 30 * 60),
+    BATTLEPASS(new ItemBuilder(Material.NAME_TAG).setName("§dBattlepass").build(), 30 * 60);
 
     private final ItemStack icon;
     private final long untilInSeconds;
