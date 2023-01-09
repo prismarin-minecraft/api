@@ -1,6 +1,7 @@
 package in.prismar.api.booster;
 
 import in.prismar.api.PrismarinProvider;
+import in.prismar.api.user.User;
 
 /**
  * Copyright (c) Maga, All Rights Reserved
@@ -19,4 +20,31 @@ public interface BoosterProvider {
      * @return
      */
     int getMultiplier(BoosterType type);
+
+    /**
+     * Get users booster amount
+     *
+     * @param user
+     * @param type
+     * @return
+     */
+    int getBoosters(User user, BoosterType type);
+
+    /**
+     * Give a user a booster
+     *
+     * @param user
+     * @param type
+     * @param amount
+     */
+    void giveBoosters(User user, BoosterType type, int amount);
+
+    /**
+     * Remove boosters from user
+     *
+     * @param user
+     * @param type
+     * @param amount
+     */
+    void removeBoosters(User user, BoosterType type, int amount);
 }
