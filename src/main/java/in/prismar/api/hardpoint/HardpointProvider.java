@@ -19,4 +19,6 @@ public interface HardpointProvider {
     long getPointRotation();
 
     long getCurrentPoints(String team);
+
+    int getTeamSize(String team);
 }
