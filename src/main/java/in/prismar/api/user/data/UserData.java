@@ -32,7 +32,6 @@ public class UserData implements RepositoryEntity<String> {
 
     private Map<String, Object> attachments;
 
-    private String address;
     //------------------------------------------------------//
 
     private Map<String, SeasonData> seasons;

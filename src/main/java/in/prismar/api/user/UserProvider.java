@@ -95,4 +95,5 @@ public interface UserProvider<U extends User> {
      * @return
      */
     CompletableFuture<List<UserData>> getAllSorted(String sorted, int pageIndex, int pageSize);
+
 }
