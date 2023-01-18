@@ -22,6 +22,8 @@ public class SeasonData {
     private Map<String, Long> stats;
     private Map<String, ArsenalItem> arsenal;
 
+    private String perk;
+
     private Map<String, String> storage;
 
     private Map<String, Object> attachments;
