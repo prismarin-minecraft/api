@@ -90,4 +90,38 @@ public interface User {
      * @param until
      */
     void setTimestamp(String key, long until);
+
+    /**
+     * Check if local cached timestamp is available
+     * if not automatically add it with the given until timestamp
+     *
+     * @param key
+     * @param until = timestamp
+     * @return
+     */
+    boolean isLocalTimestampAvailable(String key, long until);
+
+    /**
+     * Check if local cached timestamp is available
+     *
+     * @param key
+     * @return
+     */
+    boolean isLocalTimestampAvailable(String key);
+
+    /**
+     * Get local cached timestamp
+     *
+     * @param key
+     * @return = 0 if key does not exists
+     */
+    long getLocalTimestamp(String key);
+
+    /**
+     * Set local cached timestamp
+     *
+     * @param key
+     * @param until
+     */
+    void setLocalTimestamp(String key, long until);
 }
