@@ -1,5 +1,6 @@
 package in.prismar.api.game;
 
+import in.prismar.api.PrismarinProvider;
 import org.bukkit.entity.Player;
 
 /**
@@ -8,6 +9,7 @@ import org.bukkit.entity.Player;
  * Proprietary and confidential
  * Written by Maga
  **/
+@PrismarinProvider
 public interface GameProvider {
 
     boolean isCurrentlyInGame(Player player);
