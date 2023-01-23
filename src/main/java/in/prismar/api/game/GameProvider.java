@@ -1,0 +1,16 @@
+package in.prismar.api.game;
+
+import org.bukkit.entity.Player;
+
+/**
+ * Copyright (c) Maga, All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Maga
+ **/
+public interface GameProvider {
+
+    boolean isCurrentlyInGame(Player player);
+
+    boolean isCurrentlyPlayingAnyMode(Player player);
+}
