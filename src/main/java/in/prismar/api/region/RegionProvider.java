@@ -27,4 +27,8 @@ public interface RegionProvider {
 
     Location getRandomLocationInRegion(String region);
 
+    Location getLocationA(String region);
+
+    Location getLocationB(String region);
+
 }
