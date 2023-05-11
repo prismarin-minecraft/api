@@ -12,4 +12,12 @@ import in.prismar.api.PrismarinProvider;
 public interface DiscordProvider {
 
     void sendChannelMessage(String channelId, String message);
+
+    /**
+     * Send a message to a discord channel with the key being the value inside our secret manager
+     *
+     * @param key
+     * @param message
+     */
+    void sendChannelMessageWithProperty(String key, String message);
 }
