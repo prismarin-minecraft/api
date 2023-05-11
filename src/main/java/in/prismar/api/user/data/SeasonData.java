@@ -27,4 +27,6 @@ public class SeasonData {
     private Map<String, String> storage;
 
     private Map<String, Object> attachments;
+
+    private String clan;
 }
