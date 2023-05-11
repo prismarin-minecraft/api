@@ -6,9 +6,8 @@ package in.prismar.api.clan;
  * Proprietary and confidential
  * Written by Maga
  **/
-public interface Clan {
+public interface ClanPlayer {
 
-    String getId();
+    String getUuid();
     String getName();
-
 }
