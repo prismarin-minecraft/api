@@ -1,6 +1,7 @@
 package in.prismar.api.clan;
 
 import in.prismar.api.PrismarinProvider;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import java.util.UUID;
@@ -29,5 +30,11 @@ public interface ClanProvider<T extends Clan> {
     boolean isInClan(Player player);
 
     boolean isInClan(Player player, T clan);
+
+    boolean isAnyoneOnline(String id);
+
+    boolean existsClanByLocation(Location location);
+
+    T getClanByLocation(Location location);
 
 }
