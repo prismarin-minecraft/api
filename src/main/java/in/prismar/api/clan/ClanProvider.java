@@ -3,6 +3,8 @@ package in.prismar.api.clan;
 import in.prismar.api.PrismarinProvider;
 import org.bukkit.entity.Player;
 
+import java.util.UUID;
+
 /**
  * Copyright (c) Maga, All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
@@ -16,7 +18,13 @@ public interface ClanProvider<T extends Clan> {
 
     T getClanByPlayer(Player player);
 
+    T getClanByPlayer(UUID uuid);
+
     boolean existsClanById(String id);
+
+    boolean isInClan(UUID uuid);
+
+    boolean isInClan(UUID uuid, T clan);
 
     boolean isInClan(Player player);
 
