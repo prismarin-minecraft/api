@@ -37,4 +37,6 @@ public interface ClanProvider<T extends Clan> {
 
     T getClanByLocation(Location location);
 
+    boolean refreshBanner(String id);
+
 }
