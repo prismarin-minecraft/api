@@ -39,4 +39,8 @@ public interface ClanProvider<T extends Clan> {
 
     boolean refreshBanner(String id);
 
+    void increaseMachines(String clanId);
+
+    void decreaseMachines(String clanId);
+
 }
