@@ -43,4 +43,6 @@ public interface ClanProvider<T extends Clan> {
 
     void decreaseMachines(String clanId);
 
+    boolean isAllowedToBuildMachines(Location location);
+
 }
