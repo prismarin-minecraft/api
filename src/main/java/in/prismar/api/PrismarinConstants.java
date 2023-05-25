@@ -26,7 +26,7 @@ public final class PrismarinConstants {
     /** Extra **/
     public static final String BORDER = "§8§m---------------§8[ §b● §8]§8§m---------------";
     public static final String DOT = "§8▪";
-    public static final String LISTING_DOT = " " + DOT;
+    public static final String LISTING_DOT = " §8│";
     public static final String ARROW_RIGHT = "§8»";
     public static final String ARROW_LEFT = "§8«";
 }
