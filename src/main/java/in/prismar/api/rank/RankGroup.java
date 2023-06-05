@@ -15,6 +15,8 @@ public interface RankGroup {
     String getPrefix();
     String getSuffix();
 
+    String getDisplayName();
+
     String getDiscordId();
 
     String getWebColor();
