@@ -47,4 +47,6 @@ public interface ClanProvider<T extends Clan> {
 
     void giveBuff(T clan, ClanBuff buff);
 
+    void sendPrefixMessage(T clan, String message);
+
 }
