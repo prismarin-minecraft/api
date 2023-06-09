@@ -45,4 +45,6 @@ public interface ClanProvider<T extends Clan> {
 
     boolean isAllowedToBuildMachines(Location location);
 
+    void giveBuff(T clan, ClanBuff buff);
+
 }
