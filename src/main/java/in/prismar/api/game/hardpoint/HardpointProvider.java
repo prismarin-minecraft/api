@@ -1,4 +1,4 @@
-package in.prismar.api.hardpoint;
+package in.prismar.api.game.hardpoint;
 
 import in.prismar.api.PrismarinProvider;
 import org.bukkit.entity.Player;

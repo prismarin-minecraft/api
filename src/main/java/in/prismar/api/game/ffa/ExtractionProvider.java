@@ -1,9 +1,7 @@
-package in.prismar.api.map;
+package in.prismar.api.game.ffa;
 
 import in.prismar.api.PrismarinProvider;
 import org.bukkit.entity.Player;
-
-import java.util.UUID;
 
 /**
  * Copyright (c) Maga, All Rights Reserved

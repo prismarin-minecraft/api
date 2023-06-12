@@ -1,7 +1,6 @@
-package in.prismar.api.map;
+package in.prismar.api.game.ffa;
 
 import in.prismar.api.PrismarinProvider;
-import org.bukkit.entity.Player;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,7 +13,7 @@ import java.util.UUID;
  * Written by Maga
  **/
 @PrismarinProvider
-public interface GameMapProvider {
+public interface FFAMapProvider {
 
 
     /**
@@ -77,7 +76,7 @@ public interface GameMapProvider {
      *
      * @return
      */
-    List<GameMapLeaderboardEntry> getLeaderboard();
+    List<FFAMapLeaderboardEntry> getLeaderboard();
 
 
     /**
@@ -85,5 +84,5 @@ public interface GameMapProvider {
      *
      * @return
      */
-    List<GameMapLeaderboardEntry> getLeaderboard(String mapId);
+    List<FFAMapLeaderboardEntry> getLeaderboard(String mapId);
 }

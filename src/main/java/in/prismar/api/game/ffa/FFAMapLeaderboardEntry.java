@@ -1,8 +1,7 @@
-package in.prismar.api.map;
+package in.prismar.api.game.ffa;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
@@ -14,7 +13,7 @@ import java.util.UUID;
  **/
 @AllArgsConstructor
 @Getter
-public class GameMapLeaderboardEntry {
+public class FFAMapLeaderboardEntry {
 
     private final UUID uuid;
     private final String name;
