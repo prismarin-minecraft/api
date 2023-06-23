@@ -49,4 +49,6 @@ public interface ClanProvider<T extends Clan> {
 
     void sendPrefixMessage(T clan, String message);
 
+    void teleportToIsland(Player player);
+
 }
