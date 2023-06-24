@@ -14,7 +14,7 @@ public final class PrismarinConstants {
 
     public static final String RAW_PREFIX = "§f下";
     public static final String PREFIX = RAW_PREFIX + " §7";
-    public static final String CURRENT_SEASON = "0";
+    public static final String CURRENT_SEASON = "1";
     public static final String PERMISSION_PREFIX = "prismarin.";
 
     /** Messages **/
