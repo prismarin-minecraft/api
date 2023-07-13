@@ -1,7 +1,10 @@
 package in.prismar.api.scoreboard;
 
 import in.prismar.api.PrismarinProvider;
+import in.prismar.api.scoreboard.sidebar.SidebarProvisioner;
 import org.bukkit.entity.Player;
+
+import java.util.List;
 
 /**
  * Copyright (c) Maga, All Rights Reserved
@@ -16,4 +19,7 @@ public interface ScoreboardProvider {
     void recreateSidebar(Player player);
     void updateTablist(Player player);
     void updateTablistAll();
+
+    void addSidebarProvisioner(SidebarProvisioner provisioner);
+    List<SidebarProvisioner> getSidebarProvisioners();
 }
