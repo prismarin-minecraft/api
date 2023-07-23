@@ -13,4 +13,6 @@ public interface CoreProvider {
 
     String getApiUrl();
     String getApiToken();
+
+    boolean isDevMode();
 }
