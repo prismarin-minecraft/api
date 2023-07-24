@@ -51,6 +51,19 @@ public interface ClanProvider<T extends Clan> {
 
     void sendPrefixMessage(T clan, String message);
 
+
     void teleportToIsland(Player player);
+
+    boolean isUnlocked(Player player, String id);
+
+    boolean isUnlocked(T clan, String id);
+
+    void addCollectionExp(T clan, String id);
+
+    void addCollectionExp(T clan, String id, long exp);
+
+    long getCollectionExpToNextLevel(T clan, String id);
+
+    long getCollectionExpToNextLevel(String id, int level);
 
 }
