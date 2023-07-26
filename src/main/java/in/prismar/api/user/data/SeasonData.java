@@ -3,6 +3,7 @@ package in.prismar.api.user.data;
 import lombok.Data;
 
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Copyright (c) Maga, All Rights Reserved
@@ -27,6 +28,8 @@ public class SeasonData {
     private Map<String, String> storage;
 
     private Map<String, Object> attachments;
+
+    private Set<String> unlocked;
 
     private String clan;
 }
