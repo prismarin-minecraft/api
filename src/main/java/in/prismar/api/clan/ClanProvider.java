@@ -66,4 +66,6 @@ public interface ClanProvider<T extends Clan> {
 
     long getCollectionExpToNextLevel(String id, int level);
 
+    boolean isMachineUnlockable(String name);
+
 }
