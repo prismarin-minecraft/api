@@ -24,6 +24,9 @@ public class WarpEvent extends Event implements Cancellable {
     private final Location location;
 
     @Setter
+    private long timer;
+
+    @Setter
     private boolean cancelled;
 
 
