@@ -62,6 +62,9 @@ public interface ClanProvider<T extends Clan> {
 
     void addCollectionExp(T clan, String id, long exp);
 
+    void addCollectionExp(Player player, String id);
+    void addCollectionExp(Player player, String id, long exp);
+
     long getCollectionExpToNextLevel(T clan, String id);
 
     long getCollectionExpToNextLevel(String id, int level);
