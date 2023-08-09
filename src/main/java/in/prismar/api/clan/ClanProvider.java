@@ -58,12 +58,14 @@ public interface ClanProvider<T extends Clan> {
 
     boolean isUnlocked(T clan, String id);
 
-    void addCollectionExp(T clan, String id);
-
+    long addCollectionExp(T clan, String id);
+    long addCollectionExp(T clan, String id, int multiplier);
     void addCollectionExp(T clan, String id, long exp);
 
-    void addCollectionExp(Player player, String id);
+    long addCollectionExp(Player player, String id);
+    long addCollectionExp(Player player, String id, int multiplier);
     void addCollectionExp(Player player, String id, long exp);
+
 
     long getCollectionExpToNextLevel(T clan, String id);
 
