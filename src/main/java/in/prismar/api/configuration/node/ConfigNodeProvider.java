@@ -16,6 +16,8 @@ public interface ConfigNodeProvider<T extends ConfigNode> {
 
     int getInteger(String id, int defaultValue);
 
+    long getLong(String id, long defaultValue);
+
     double getDouble(String id, double defaultValue);
 
     String getString(String id, String defaultValue);

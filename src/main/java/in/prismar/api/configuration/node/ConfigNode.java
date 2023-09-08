@@ -21,4 +21,6 @@ public interface ConfigNode {
     double valueAsDouble();
 
     int valueAsInteger();
+
+    long valueAsLong();
 }
