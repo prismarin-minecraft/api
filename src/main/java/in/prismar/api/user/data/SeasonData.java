@@ -21,6 +21,7 @@ public class SeasonData {
     private Map<String, Long> timestamps;
 
     private Map<String, Long> stats;
+
     private Map<String, ArsenalItem> arsenal;
 
     private String perk;
