@@ -10,4 +10,12 @@ import java.util.Optional;
 public interface CustomItemProvider {
 
     void createAmmoFilledGun(Player player, ItemStack based);
+
+    void addCustomItemAmmoTempCacheChecker(CustomItemAmmoTempCacheChecker checker);
+
+    interface CustomItemAmmoTempCacheChecker {
+        boolean check(Player player);
+    }
 }
+
+
