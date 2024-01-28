@@ -13,6 +13,4 @@ import org.bukkit.entity.Player;
 public interface GameProvider {
 
     boolean isCurrentlyInGame(Player player);
-
-    boolean isCurrentlyPlayingAnyMode(Player player);
 }
