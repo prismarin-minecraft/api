@@ -1,6 +1,7 @@
 package in.prismar.api.mission;
 
 import in.prismar.api.PrismarinProvider;
+import org.bukkit.Material;
 
 import java.util.UUID;
 
@@ -13,13 +14,15 @@ import java.util.UUID;
 @PrismarinProvider
 public interface MissionProvider<T extends Mission> {
 
-    T create(String id, MissionType type, String title, long maxProgress);
+    T create(String id, MissionType type, Material icon, String title, int maxStage);
+
+    T create(T mission);
 
     T getById(String id);
 
-    T addProgress(UUID uuid, String missionId, long progress);
+    T addProgress(UUID uuid, String missionId, int stage, long progress);
 
-    T getProgressByPlayer(UUID uuid, String missionId);
+    MissionData getDataByUUID(UUID uuid, String missionId);
 
-    boolean isFinished(UUID uuid);
+    boolean isFinished(UUID uuid, String missionId);
 }
