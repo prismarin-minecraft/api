@@ -18,7 +18,7 @@ import java.util.UUID;
 @PrismarinProvider
 public interface MissionProvider<T extends Mission> {
 
-    T create(T mission);
+    T register(T mission);
 
     Optional<T> getByIdOptional(String id);
 
