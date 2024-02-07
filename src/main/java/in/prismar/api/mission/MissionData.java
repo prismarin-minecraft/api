@@ -11,6 +11,8 @@ public class MissionData {
     private int stage;
     private long progress;
 
+    private boolean selected;
+
     public boolean isReset() {
         if(resetTimestamp == 0) {
             return false;
