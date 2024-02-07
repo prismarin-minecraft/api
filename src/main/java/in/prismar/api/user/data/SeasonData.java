@@ -1,5 +1,6 @@
 package in.prismar.api.user.data;
 
+import in.prismar.api.mission.MissionData;
 import lombok.Data;
 
 import java.util.Map;
@@ -31,6 +32,8 @@ public class SeasonData {
     private Map<String, Object> attachments;
 
     private Set<String> unlocked;
+
+    private Map<String, MissionData> missions;
 
     private String clan;
 }

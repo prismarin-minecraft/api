@@ -10,4 +10,11 @@ public class MissionData {
 
     private int stage;
     private long progress;
+
+    public boolean isReset() {
+        if(resetTimestamp == 0) {
+            return false;
+        }
+        return (resetTimestamp - System.currentTimeMillis()) <= 0;
+    }
 }
