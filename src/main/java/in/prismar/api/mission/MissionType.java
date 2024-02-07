@@ -13,7 +13,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum MissionType {
 
-    DAILY(30),
+    DAILY(60 * 60 * 24),
 
     WEEKLY(60 * 60 * 24 * 7),
 
