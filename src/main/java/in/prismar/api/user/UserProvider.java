@@ -26,6 +26,15 @@ public interface UserProvider<U extends User> {
     U load(UUID uuid);
 
     /**
+     * Same as  load(uuid) but with throwing an exception if something went wrong
+     *
+     * @param uuid
+     * @return
+     * @throws Exception
+     */
+    U loadWithException(UUID uuid) throws Exception;
+
+    /**
      * Load user async
      *
      * @param uuid {@link UUID}
