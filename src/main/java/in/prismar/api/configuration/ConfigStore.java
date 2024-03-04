@@ -33,6 +33,46 @@ public interface ConfigStore {
         return Float.parseFloat(getProperty(key));
     }
 
+    default int getIntPropertyOrDefault(String key, int defaultValue) {
+        try {
+            return getIntProperty(key);
+        } catch (Exception ex) {
+            return defaultValue;
+        }
+    }
+
+    default double getDoublePropertyOrDefault(String key, double defaultValue) {
+        try {
+            return getDoubleProperty(key);
+        } catch (Exception ex) {
+            return defaultValue;
+        }
+    }
+
+    default long getLongPropertyOrDefault(String key, long defaultValue) {
+        try {
+            return getLongProperty(key);
+        } catch (Exception ex) {
+            return defaultValue;
+        }
+    }
+
+    default boolean getBooleanPropertyOrDefault(String key, boolean defaultValue) {
+        try {
+            return getBooleanProperty(key);
+        } catch (Exception ex) {
+            return defaultValue;
+        }
+    }
+
+    default float getFloatPropertyOrDefault(String key, float defaultValue) {
+        try {
+            return getFloatProperty(key);
+        } catch (Exception ex) {
+            return defaultValue;
+        }
+    }
+
     String getProperty(String category, String key);
 
 }
