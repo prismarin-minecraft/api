@@ -33,6 +33,15 @@ public interface ConfigStore {
         return Float.parseFloat(getProperty(key));
     }
 
+    default String getPropertyOrDefault(String key, String defaultValue) {
+        try {
+            String property = getProperty(key);
+            return property == null ? defaultValue : property;
+        } catch (Exception ex) {
+            return defaultValue;
+        }
+    }
+
     default int getIntPropertyOrDefault(String key, int defaultValue) {
         try {
             return getIntProperty(key);
