@@ -25,6 +25,10 @@
             <id>prismarin-private-maven-registry</id>
             <url>https://nexus.averix.tech/repository/prismarin-private-maven-registry/</url>
         </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
     </repositories>
 
 
