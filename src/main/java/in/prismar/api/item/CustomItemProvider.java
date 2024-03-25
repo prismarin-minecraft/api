@@ -9,6 +9,8 @@ import java.util.Optional;
 @PrismarinProvider
 public interface CustomItemProvider {
 
+    ItemStack createItem(String id);
+
     void createAmmoFilledGun(Player player, ItemStack based);
 
     void addCustomItemAmmoTempCacheChecker(CustomItemAmmoTempCacheChecker checker);
